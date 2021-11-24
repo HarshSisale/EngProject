@@ -1,0 +1,452 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.header{
+    min-height:130vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.4), rgba(4,9,30,0.6)),url(Assets/Screenshot\ 2021-11-21\ 143139.png);
+    background-position: center;
+    background-size: cover;
+    position:relative;
+}
+.citraheader{
+    min-height:130vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.4), rgba(4,9,30,0.6)),url(Assets/Screenshot\ 2021-11-21\ 143139.png);
+    background-position: center;
+    background-size: cover;
+    position:relative;
+}
+nav{
+    display:flex;
+    padding: 1% 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width:70px
+}
+.nav-links{
+    flex:1;
+    text-align:right;
+}
+.nav-links ul li{
+    list-style: none;
+    display:inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color:white;
+    text-decoration: none;
+    font-size: 25px;
+}
+.nav-links ul li::after{
+    content:'';
+    width:0%;
+    height:2px;
+    background:rgb(201, 21, 21);
+    display:block;
+    margin:auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width:100%
+}
+
+.textbox{
+    width:90%;
+    color:#ffff;
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+}
+.textbox h1{
+    font-size: 62px;
+}
+.textbox p{
+    margin: 10px 0 40px;
+    font-size: 30px;
+    color:#fff;
+}
+.iamgoingtocry{
+    display:inline-block;
+    text-decoration: none;
+    color: rgb(201, 21, 21);
+    border: 1px solid rgb(201, 21, 21);
+    padding:12px 34px;
+    font-size:29px;
+    background:white;
+    position:relative;
+    cursor:pointer;
+}
+.iamgoingtocry:hover{
+    border:1px solid rgb(201, 21, 21);
+    background: rgb(201, 21, 21);
+    color:white;
+    transition: 0.6s;
+}
+/*----- Summary -----*/
+.summary{
+    width:80%;
+    margin:auto;
+    text-align: center;
+    margin-top: 30px;
+}
+.summary h1{
+    font-size:36px;
+    font-weight: 600;
+}
+.summary p{
+    color: #fff;;
+    font-size:14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.sumrow{
+    margin-top:1%;
+    display: flex;
+    justify-content: center;
+}
+.sumcol{
+    flex-basis: 90%;
+    background:rgb(201, 21, 21);
+    border-radius:10px;
+    margin-bottom:5%;
+    padding:20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.sumcol:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.3);
+}
+.citrasummary p{
+    color: #777;
+    font-size:14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.citrasumcol{
+    flex-basis: 90%;
+    background:rgb(162, 255, 224);
+    border-radius:10px;
+    margin-bottom:5%;
+    padding:20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.citrasumcol:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.3);
+}
+.curiesumcol{
+    flex-basis: 90%;
+    background:rgb(147, 112, 216);
+    border-radius:10px;
+    margin-bottom:5%;
+    padding:20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.curiesumcol p{
+    color:black;
+}
+.curiesumcol:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.3);
+}
+.faradaysumcol{
+    flex-basis: 90%;
+    background:ivory;
+    border-radius:10px;
+    margin-bottom:5%;
+    padding:20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.faradaysumcol p{
+    color:black;
+}
+.faradaysumcol:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.3);
+}
+.lucifersumcol{
+    flex-basis: 90%;
+    background:black;
+    border-radius:10px;
+    margin-bottom:5%;
+    padding:20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.lucifersumcol p{
+    color:white;
+}
+.lucifersumcol:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.3);
+}
+
+/*----- Scythe Pages -----*/
+.campus{
+    width:80%;
+    margin:auto;
+    text-align:center;
+    padding-top: 50px;
+}
+.row{
+    padding-top: 30px;
+    height:300px;
+    width:80%;
+    margin: auto;
+    display:flex;   
+}
+.campus-col{
+    flex-basis:32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position:relative;
+    overflow: hidden;
+}
+.campus-col img{
+    width:100%;
+   
+}
+/*-----citra-----*/
+.citralayer{
+    background: transparent;
+    height:100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.citralayer:hover{
+    background: rgba(13, 230, 157,0.7);
+}
+.citralayer a{
+    text-decoration: none;
+    width:100%;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.citralayer:hover a{
+    text-decoration: none;
+    bottom:49%;
+    opacity: 1;
+}
+/*-----rowan-----*/
+.rowanlayer{
+    background: transparent;
+    height:100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.rowanlayer:hover{
+    background: rgba(0, 0, 0, 0.7);
+}
+.rowanlayer a{
+    text-decoration: none;
+    width:100%;
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.rowanlayer:hover a{
+    text-decoration: none;
+    bottom:49%;
+    opacity: 1;
+}
+/*-----faraday-----*/
+.faradaylayer{
+    background: transparent;
+    height:100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.faradaylayer:hover{
+    background: rgba(255, 255, 240, 0.7);
+}
+.faradaylayer a{
+    text-decoration: none;
+    width:100%;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.faradaylayer:hover a{
+    text-decoration: none;
+    bottom:49%;
+    opacity: 1;
+}
+/*-----curie-----*/
+.curielayer{
+    background: transparent;
+    height:100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.curielayer:hover{
+    background:rgba(147, 112, 216, 0.7);
+}
+.curielayer a{
+    text-decoration: none;
+    width:100%;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.curielayer:hover a{
+    text-decoration: none;
+    bottom:49%;
+    opacity: 1;
+}
+
+.container{
+position: relative;
+text-align: center;
+color: dimgrey;
+max-width: screen;
+margin: 0 auto;
+background: white;
+font-size: 24px;
+}
+.title{
+    position: absolute;
+    top: 48px;
+    left: 200px;
+    transform: translate(-50%,-50%);
+    text-decoration: none;
+    font: size 25px;
+    color:rgb(13, 230, 157);
+}
+.credit{
+  position: absolute;
+  bottom: 8px;
+  right: 30px;
+  color: rgb(13, 230, 157);
+  font-size:25px;
+}
+.curietitle{
+    position: absolute;
+    top: 48px;
+    left: 200px;
+    transform: translate(-50%,-50%);
+    text-decoration: none;
+    font: size 25px;
+    color:rgb(147, 112, 216);
+}
+.curiecredit{
+  position: absolute;
+  bottom: 8px;
+  right: 30px;
+  color: rgb(147, 112, 216);
+  font-size:25px;
+}
+.faradaytitle{
+    position: absolute;
+    top: 48px;
+    left: 200px;
+    transform: translate(-50%,-50%);
+    text-decoration: none;
+    font: size 25px;
+    color:ivory;
+}
+.faradaycredit{
+  position: absolute;
+  bottom: 8px;
+  right: 30px;
+  color: ivory;
+  font-size:25px;
+}
+.lucifertitle{
+    position: absolute;
+    top: 100px;
+    left: 170px;
+    transform: translate(-50%,-50%);
+    text-decoration: none;
+    font: size 25px;
+    color:Black;
+}
+.lucifercredit{
+  position: absolute;
+  bottom: 8px;
+  right: 30px;
+  color: black;
+  font-size:25px;
+}
+.parallax{
+    background :url('Assets/Citra_by_Dominique_Wesson.png') no-repeat center;
+    background-size:cover;
+    background-attachment: fixed;
+    height: 700px;
+    width: screen;
+}
+.curieparallax{
+    background :url('Assets/curieparallax.png') no-repeat center;
+    background-size:cover;
+    background-attachment: fixed;
+    height: 700px;
+    width: screen;
+}
+.faradayparallax{
+    background :url('Assets/faradayparallax.png') no-repeat center;
+    background-size:cover;
+    background-attachment: fixed;
+    height: 700px;
+    width: screen;
+}
+.luciferparallax{
+    background :url('Assets/rowanparallax.png') no-repeat center;
+    background-size:cover;
+    background-attachment: fixed;
+    height: 700px;
+    width: screen;
+}
+
+body{
+    background-color:white
+}
+
+
+
+
+
